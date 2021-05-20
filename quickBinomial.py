@@ -28,14 +28,14 @@ if choice == 2:
     res = 0
 
     factN = math.factorial(n)
-    for i in range(start, end+1): #from start to the end inclusively yeehaw
+    for i in range(start, end+1): #from start to the end inclusively 
         diff = n - i
         factK = math.factorial(i)
         factNK = math.factorial(diff)
 
         BC = factN / (factK*factNK)
         res = res + (BC * (p**i)* (1-p)**(n-i)  ) #C(N,k) * p^k * q^(n-k)
-        #print(res)
+        
 
     print(res)
     print(1-res, "<- 1- res")
